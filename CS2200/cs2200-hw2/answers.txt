@@ -1,0 +1,12 @@
+CS 2200 Fall 2023
+Homework 2
+
+Name: Juntae Park
+GT Username: jpark3068
+
+For jalr, what we can do is use two different instruction set to replace it. Suppose "target" is the address we need to get, we can do something like 
+(a)lea $r0, 1
+(b)beq $t0, $t0, target
+
+Essentially we're using lea to save the return address (and use offset 1 since it'll want to return to the next line) and branching to target by using beq. 
+
